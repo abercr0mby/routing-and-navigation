@@ -76,6 +76,11 @@
             "target": "home"
          }, 
          {
+				"pattern": "employees/overview",
+				"name": "employeeOverview",
+				"target": ["employeeOverviewTop", "employeeOverviewContent"]
+		},         
+        {
 				"pattern": "employees",
 				"name": "employeeList",
 				"target": "employees"
@@ -89,11 +94,6 @@
 			"pattern": "employees/{employeeId}/resume:?query:",
 			"name": "employeeResume",
 			"target": "employeeResume"
-		},
-		{
-				"pattern": "employees/overview",
-				"name": "employeeOverview",
-				"target": ["employeeOverviewTop", "employeeOverviewContent"]
 		}],
          "targets": {
             "home": {
